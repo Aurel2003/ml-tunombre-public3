@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">    
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        display: grid;
+        justify-content: center;
+    }
+    nav{
+        width: 1500px;
+        height: 65px;
+        background-color: rgb(0,0,0);
+        margin-top: 8px;
+    }
+   h1{
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 10px;
+   }
+   li{
+    display: inline-block;
+   }
+   .l1{
+   position: relative;
+   left: 480px;
+   top: 10px;
+   }
+   .l2{
+    position: relative;
+    left: 620px;
+    top: 10px;
+   }
+   a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.1rem;
+   }
+  .content{
+    position: relative;
+    left: 0px;
+    top: 40px;
+    width: 1500px;
+    height: 400px;
+    background-color: white;
+    outline: 3px solid rgb(156, 156, 156);
+    border-radius: 6px;
+  }
+   h2{
+    text-align: center;
+    font-size: 2.2rem;
+    opacity: 1.0;
+    margin-top: 20px;
+   }
+   .t1{
+    position: relative;
+    top: 20px;
+    width: 100%;
+    height: 40px;
+    border: 2px solid white;
+    background-color: rgb(22, 197, 22);
+    color: white;
+   }
+   .t2{
+   margin-top: 20px;
+   display: flex;
+   
+}
+.is{
+    border: 1px solid  gray;
+    opacity: 0.3;
+    margin-top: 95px;
+}
+/*#nu{
+   display:block;
+
+    margin:26px 560px;
+    font-size: 1rem;
+}*/
+</style>
+<title>Places</title>
+<body>
+<nav>
+    <h1>Descubriendo Gran Canaria</h1>
+</nav> 
+<ul>
+    <li class="l1"><a href="./index.html">Nuevo lugar que visitar</a></li>
+    <li class="l2"><a href="">Lugares que no me puedo perder</a></li>
+</ul>
+<div class="content">
+    <h2>Lugares que no me puedo perder</h2>
+    <table class="t1">
+        <td>Visitado</td>
+        <td>Nombre del lugar</td>
+        <td>Descripcion</td>
+        <td>Municipio</td>
+        <td>URL con mas informacion</td>
+        <td>URL de Google Maps</td>
+        <td>Imagen</td>
+    </table>
+    <table class="t2">
+         <td style="position: relative;top: 70px;left: 20px;"><input type="checkbox"></td>
+        <td style="position: relative;top:150px;left: 6px;"><input type="checkbox"></td>
+    </table>
+    <hr class="is">
+    <table class="t2">
+        <td style="position: relative;top: -70px;left: 120px;">Playa De Las Canteras</td>
+       <td style="position: relative;top: 11px;left: -28px;">Mirador del Anden Verde</td>
+   </table>
+   <table class="t2">
+    <td style="position: relative;top: -110px;left: 330px;">La mejor playa de la isla</td>
+   <td style="position: relative;top: -30px;left: 168px;">Un mirador impresionate</td>
+</table>
+<table class="t2">
+    <td style="position: relative;top: -152px;left: 520px;">La mejor playa de la isla</td>
+   <td style="position: relative;top: -72px;left: 358px;">Un mirador impresionate</td>
+</table>
+<table class="t2">
+    <td style="position: relative;top: -194px;left: 720px;"><a href="http://miplayadelascantares.com/" style="color: dodgerblue;">miplayadelascantares.com</a></td>
+   <td style="position: relative;top: -114px;left: 520px;"><a href="https://www.grancanaria.com/patronato_turismo/Anden-Verde.2852.0.html" style="color: dodgerblue" id="nu">grancanaria.com</a></td>
+</table>
+<table class="t2">
+    <td style="position: relative;top: -238px;left: 990px;"><a href="https://goo.gl/maps/nYroNfJ1MfViGpm7" style="color: dodgerblue;">https://goo.gl/maps/nYroNfJ1MfViGpm7</a></td>
+   <td style="position: relative;top: -158px;left: 680px;"><a href="https://goo.gl/maps/nYroNfJ1MfViGpm7" style="color: dodgerblue" id="nu">https://goo.gl/maps/nYroNfJ1MfViGpm7</a></td>
+</table>
+<table class="t2">
+    <td style="position: relative;top: -350px;left: 1330px;"><img src="https://thumbs.dreamstime.com/z/aerial-view-amadores-beach-gran-canaria-island-spain-aerial-view-amadores-beach-gran-canaria-island-131272214.jpg" width="150px"></td>
+   <td style="position: relative;top: -220px;left: 1180px;"><img src="https://thumbs.dreamstime.com/z/canteras-beach-las-palmas-de-gran-canaria-spain-27147156.jpg" width="150px"></td>
+</table>
+</div>
+</body>    
+</html>

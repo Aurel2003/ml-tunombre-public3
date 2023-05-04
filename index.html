@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf'8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="author" content="Aurel">
+<meta name="keyword" content="my first webpage">    
+</head>    
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        display: grid;
+        justify-content: center;
+    }
+    nav{
+        margin-top: 5px;
+        width: 1520px;
+        height: 60px;
+        background-color: rgba(47,47,37,0.9);
+    }
+    .titlu{
+        text-align: center;
+        margin-top: -50px;
+        color: white;
+    }
+    li{
+        display: inline-block;
+        margin: 14px;
+        position: relative;
+        top: -9px;
+    }
+    #link1{
+        position: relative;
+        left: 530px;
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+    }
+    #link1:hover{
+        width: 200px;
+       border: 6px solid black;
+        background-color: black;
+        color: white;
+    }
+    #link2{
+        position: relative;
+        left: 580px;
+        text-decoration: none;
+        font-weight: bolder;
+        color: black;
+       font-style: normal;
+    }
+   
+    #link1:hover{
+        animation-name: rainbow;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        color: white;
+    }
+    @keyframes rainbow{
+        0%{color: red;}
+        25%{color: yellow;}
+        50%{color: orange;}
+        75%{color: greenyellow;}
+        100%{color: blue;}
+    }
+    .row{
+        position: relative;
+        left: 300px;
+        top: 10px;
+    }
+    .subsol{
+        margin-top: 40px;
+        text-align: center;
+    }
+</style>
+<title>My Website</title>
+<body>
+  <nav></nav>
+  <h1 class="titlu">Descubriendo Gran Canaria</h1>
+  <ul>
+    <li><a href="./newPlace.html" id="link1">Nuevo lugar que visitar</a></li>
+    <li><a href="" id="link2">Nuevo lugar que visitar</a></li>
+  </ul> 
+  <!--<a href="./holaMundo.html" id="link1">Nuevo lugar que visitar</a><br>
+  <p id="link2">Lugares que no me puedo perder</p>-->
+  <img class="row" src="./Gran-Canaria-Acusa-Artenara.jpg" width="60%">
+  
+  <footer class="subsol">
+    <p>En esta pequena aplicacion web vamos a poder registrar y consultar lugares de Gran Canaria que deberiamos visitar.Tambien vamos a poder marcar aquellos lugares que ya hemos visitado.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">    
+</head>    
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        width: 100%;
+        background-color: rgba(250,250,250,0.9);
+       display:grid;
+    justify-content: center;
+    }
+    nav{
+        margin-top: 5px;
+        width: 1520px;
+        height: 60px;
+        background-color: rgba(47,47,37,0.9);
+    }
+    .titlu{
+       color: white;
+       text-align: center;
+       margin-top: 11px;
+       font-size: 1.9rem;
+    }
+    #link1{
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+        margin-left: 770px;
+       font-size: 1.2rem;
+    }
+    #link2{
+        text-decoration: none;
+        color: white;
+        font-weight: bolder;
+        margin-left: 530px;
+       font-size: 1.2rem;
+       background-color:rgba(47,47,37,0.9);
+    }
+   .c1{
+    margin-top: 0px;
+   }
+   .c2{
+    margin-top: -22px;
+   }
+   form{
+    width: 700px;
+    height: 590px;
+    background-color: rgb(245, 245, 245);
+   position: relative;
+   left: 380px;
+   top: 14px;
+   }
+   .icon{
+   position: relative;
+   left: 100px;
+   top: -23px;
+   }
+   .sub{
+    position: relative;
+    top: 60px;
+    left: 70px;
+    background-color: lightgreen;
+    border: 2px solid lightgreen;
+    outline: 7px solid lightgreen;
+
+   }
+</style>
+<title>Hello</title>
+<body>
+    <nav>
+        <h1 class="titlu" >Descubriendo Gran Canaria</h1><br>
+    </nav>
+   <div class="c1">
+    <a href="./places.html" id="link1">Nuevo lugar que visitar</a>
+   </div>
+   <div class="c2">
+    <a href="./places.html" id="link2">Nuevo lugar que visitar</a>
+   </div>
+<form action="">
+<h1 style="text-align: center;margin-top: 10px;">Nuevo lugar que visitar</h1>
+<h3 style="text-align: center; margin-top: 20px;">Nombre del lugar:</h3>
+<input  name="nume" required  type="text" style="width: 500px;margin-left: 100px;border: 2px solid white;height: 25px;"><br>
+<h3 style="text-align: center; margin-top: 20px;">Descripcion:</h3>
+<input  name="descriere" required type="text" style="width: 500px;margin-left: 100px;border: 2px solid white;height: 25px;"><br>
+<h3 style="text-align: center; margin-top: 20px;">Municipio donde se encuentra:</h3>
+<select name="optiuni" required  style="width: 500px;margin-left: 100px;border: 2px solid white;height: 25px;">
+    <option>Las Palmas de Gran Canaria</option>
+    <option>Agaete</option>
+    <option>Agüimes</option>
+    <option>Artenara</option>
+    <option>Arucas</option>
+    <option>Firgas</option>
+    <option>Gáldar</option>
+    <option>Ingenio</option>
+    <option>La Aldea de San Nicolás</option>
+    <option>Mogán</option>
+    <option>Moya</option>
+    <option>San Bartolomé de Tirajana</option>
+    <option>Santa Brígida</option>
+    <option>Santa Lucía de Tirajana</option>
+    <option>Santa María de Guía de Gran Canaria</option>
+    <option>Tejeda</option>
+    <option>Telde</option>
+    <option>Teror</option>
+    <option>Valleseco</option>
+    <option>Valsequillo de Gran Canaria</option>
+    <option>Vega de San Mateo</option>
+</select>
+<h3 style="text-align: center; margin-top: 20px;">URL.con mas informacion:</h3>
+<input name="url1" required  type="text" style="width: 500px;margin-left: 100px;border: 2px solid white;height: 25px;"><br>
+<h3 style="text-align: center; margin-top: 20px;">URL.con enlance a Google Maps:</h3>
+<input name="url2" required  type="text" style="width: 500px;margin-left: 100px;border: 2px solid white;height: 25px;"><br>
+<h3 style="text-align: center; margin-top: 20px;">Imagen:</h3>
+<select name="poza" required style="width: 500px;margin-left: 100px;border: 2px solid white;height: 25px;">
+    <input type="file" accept="image/png, image/jpeg" class="icon">
+</select>
+<button type="submit" class="sub">Enviar</button>
+</form>
+</body>
+</html>
