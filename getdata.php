@@ -95,16 +95,16 @@
                 $txt = "";
                 fwrite($myfile, $_POST["nume"]);
                 fwrite($myfile, ";");
-                fwrite($myfile, $_POST["optiuni"]);
+                fwrite($myfile, $_POST["descriere"]);                
                 fwrite($myfile, ";");
-                fwrite($myfile, $_POST["descriere"]);
+                fwrite($myfile, $_POST["optiuni"]);
                 fwrite($myfile, ";");
                 fwrite($myfile, $_POST["url1"]);
                 fwrite($myfile, ";");
                 fwrite($myfile, $_POST["url2"]);
                 fwrite($myfile, ";");
                 fwrite($myfile, $_POST["fisier"]);
-                fwrite($myfile, ";");
+                fwrite($myfile, "\n");
                
                 fclose($myfile);
             }
