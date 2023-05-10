@@ -86,11 +86,11 @@
 <form action="./getdata.php" method="post">
 <h1 style="text-align: center;margin-top: 10px;">Nuevo lugar que visitar</h1>
 <h3 style="text-align: center; margin-top: 20px;">Nombre del lugar:</h3>
-<input  name="nume" required  type="text" style="width: 500px;margin-left: 100px;border: 2px solid white;height: 25px;"><br>
+<input  name="nume"  type="text" style="width: 500px;margin-left: 100px;border: 2px solid white;height: 25px;"><br>
 <h3 style="text-align: center; margin-top: 20px;">Descripcion:</h3>
-<input  name="descriere" required type="text" style="width: 500px;margin-left: 100px;border: 2px solid white;height: 25px;"><br>
+<input  name="descriere"  type="text" style="width: 500px;margin-left: 100px;border: 2px solid white;height: 25px;"><br>
 <h3 style="text-align: center; margin-top: 20px;">Municipio donde se encuentra:</h3>
-<select name="optiuni" required  style="width: 500px;margin-left: 100px;border: 2px solid white;height: 25px;">
+<select name="optiuni" style="width: 500px;margin-left: 100px;border: 2px solid white;height: 25px;">
     <option>Las Palmas de Gran Canaria</option>
     <option>Agaete</option>
     <option>Agüimes</option>
@@ -114,12 +114,12 @@
     <option>Vega de San Mateo</option>
 </select>
 <h3 style="text-align: center; margin-top: 20px;">URL.con mas informacion:</h3>
-<input name="url1" required  type="text" style="width: 500px;margin-left: 100px;border: 2px solid white;height: 25px;"><br>
+<input name="url1"  type="text" style="width: 500px;margin-left: 100px;border: 2px solid white;height: 25px;"><br>
 <h3 style="text-align: center; margin-top: 20px;">URL.con enlance a Google Maps:</h3>
-<input name="url2" required  type="text" style="width: 500px;margin-left: 100px;border: 2px solid white;height: 25px;"><br>
+<input name="url2"  type="text" style="width: 500px;margin-left: 100px;border: 2px solid white;height: 25px;"><br>
 <h3 style="text-align: center; margin-top: 20px;">Imagen:</h3>
 <select style="width: 500px;margin-left: 100px;border: 2px solid white;height: 25px;">
-    <input type="file" accept="image/png, image/jpeg" class="icon">
+    <input type="file" accept="image/png, image/jpeg" class="icon" name="fisier">
 </select>
 <button type="submit" class="sub">Enviar</button>
 </form>
