@@ -20,6 +20,9 @@
         background-color: rgb(0,0,0);
         margin-top: 8px;
     }
+    th{
+        background-color: greenyellow;
+    }
    h1{
     color: white;
     text-align: center;
@@ -98,44 +101,39 @@
 </ul>
 <div class="content">
     <h2>Lugares que no me puedo perder</h2>
-    <table class="t1">
-        <td>Visitado</td>
-        <td>Nombre del lugar</td>
-        <td>Descripcion</td>
-        <td>Municipio</td>
-        <td>URL con mas informacion</td>
-        <td>URL de Google Maps</td>
-        <td>Imagen</td>
+    <table>
+        <thead>
+            <tr>
+                <th>Visitado</th>
+                <th>Nombre del lugar</th>
+                <th>Descripción</th>
+                <th>Municipio</th>
+                <th>URL con más información</th>
+                <th>URL de Google Maps</th>
+                <th>Imagen</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="checkbox" checked="checked"></td>
+                <td>Playa de Las Canteras</td>
+                <td>La mejor playa de la isla</td>
+                <td>Las Palmas de Gran Canaria</td>
+                <td><a href="#">https://miplayadelascanteras.com</a></td>
+                <td><a href="#">https://goo.gl/maps/nyKroNfJ1MfViGpm7</a></td>
+                <td><img src="https://thumbs.dreamstime.com/z/aerial-view-amadores-beach-gran-canaria-island-spain-aerial-view-amadores-beach-gran-canaria-island-131272214.jpg" alt="Playa de Las Canteras" width="50px"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Mirador del Andén Verde</td>
+                <td>Un mirador impresionante</td>
+                <td>La Aldea de San Nicolás</td>
+                <td><a href="#">http://www.grancanaria.com/patronato_turismo/Anden-Verde.28252.0.html</a></td>
+                <td><a href="#">https://goo.gl/maps/nyKroNfJ1MfViGpm7</a></td>
+                <td><img src="https://thumbs.dreamstime.com/z/canteras-beach-las-palmas-de-gran-canaria-spain-27147156.jpg" alt="Andén Verde" width="50px"></td>
+            </tr>                    
+        </tbody>
     </table>
-    <table class="t2">
-         <td style="position: relative;top: 70px;left: 20px;"><input type="checkbox"></td>
-        <td style="position: relative;top:150px;left: 6px;"><input type="checkbox"></td>
-    </table>
-    <hr class="is">
-    <table class="t2">
-        <td style="position: relative;top: -70px;left: 120px;">Playa De Las Canteras</td>
-       <td style="position: relative;top: 11px;left: -28px;">Mirador del Anden Verde</td>
-   </table>
-   <table class="t2">
-    <td style="position: relative;top: -110px;left: 330px;">La mejor playa de la isla</td>
-   <td style="position: relative;top: -30px;left: 168px;">Un mirador impresionate</td>
-</table>
-<table class="t2">
-    <td style="position: relative;top: -152px;left: 520px;">La mejor playa de la isla</td>
-   <td style="position: relative;top: -72px;left: 358px;">Un mirador impresionate</td>
-</table>
-<table class="t2">
-    <td style="position: relative;top: -194px;left: 720px;"><a href="http://miplayadelascantares.com/" style="color: dodgerblue;">miplayadelascantares.com</a></td>
-   <td style="position: relative;top: -114px;left: 520px;"><a href="https://www.grancanaria.com/patronato_turismo/Anden-Verde.2852.0.html" style="color: dodgerblue" id="nu">grancanaria.com</a></td>
-</table>
-<table class="t2">
-    <td style="position: relative;top: -238px;left: 990px;"><a href="https://goo.gl/maps/nYroNfJ1MfViGpm7" style="color: dodgerblue;">https://goo.gl/maps/nYroNfJ1MfViGpm7</a></td>
-   <td style="position: relative;top: -158px;left: 680px;"><a href="https://goo.gl/maps/nYroNfJ1MfViGpm7" style="color: dodgerblue" id="nu">https://goo.gl/maps/nYroNfJ1MfViGpm7</a></td>
-</table>
-<table class="t2">
-    <td style="position: relative;top: -350px;left: 1330px;"><img src="https://thumbs.dreamstime.com/z/aerial-view-amadores-beach-gran-canaria-island-spain-aerial-view-amadores-beach-gran-canaria-island-131272214.jpg" width="150px"></td>
-   <td style="position: relative;top: -220px;left: 1180px;"><img src="https://thumbs.dreamstime.com/z/canteras-beach-las-palmas-de-gran-canaria-spain-27147156.jpg" width="150px"></td>
-</table>
 </div>
 </body>    
 </html>
