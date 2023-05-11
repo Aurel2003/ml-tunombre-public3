@@ -107,9 +107,22 @@
                 fwrite($myfile, "\n");
                
                 fclose($myfile);
+                $line = "$nume;$optiuni;$descriere;$url1;$url2;$fisierpoza";
+
+                 $array_line = explode(";",$line);
+                echo "<pre>";
+                var_dump($array_line);
+                echo "</pre>";
+
+                echo "<br>Your name is ...".$array_line[0];
+                echo "<br>Your place is ...".$array_line[1];
+                echo "<br>Your description is ...".$array_line[2];
+                echo "<br>Your url informacion is ...".$array_line[3];
+                echo "<br>Your url google maps is ...".$array_line[4];
+                echo "<br>Your photo name is ...".$array_line[5];
             }
 
-
+        
         
 
 
