@@ -106,7 +106,7 @@
                 fwrite($myfile, $_POST["fisier"]);
                 fwrite($myfile, "\n");
                
-                //fclose($myfile);
+                fclose($myfile);
                 //$line = "$nume;$optiuni;$descriere;$url1;$url2;$fisierpoza";
 
              
