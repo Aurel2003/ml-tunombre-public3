@@ -23,9 +23,9 @@
                $descriere = $_POST["descriere"];
                $url1 = $_POST["url1"];
                $url2 = $_POST["url2"];
-               $fisierpoza = $_POST["fisier"];;
+               $fisierpoza = $_POST["fisier"];
                $optiuni =  $_POST["optiuni"];
-               $image = $_FILES["imagen"]["name"];
+             
 
             $error = false;
 
@@ -112,9 +112,7 @@
              
     $fileUploadDir = "./upload";
 
-    if (!(move_uploaded_file($_FILES["imagen"]["tmp_name"], $fileUploadDir."/".$_FILES["fisierpoza"]["name"])))
-        echo "<br>Error al subir el fichero";
-
+    
     $myfile = fopen("textfile.csv", "a") or die("Unable to open file!");
     $txt = "\n$nume;$descriere;$optiuni;$url1;$url2;$fisierpoza";
     fwrite($myfile, $txt);
