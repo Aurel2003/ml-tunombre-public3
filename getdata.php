@@ -23,9 +23,9 @@
                $descriere = $_POST["descriere"];
                $url1 = $_POST["url1"];
                $url2 = $_POST["url2"];
-               $fisierpoza = $_POST["fisier"];
+               $fisierpoza = $_POST["fisier"];;
                $optiuni =  $_POST["optiuni"];
-              
+               $image = $_FILES["imagen"]["name"];
 
             $error = false;
 
@@ -107,9 +107,27 @@
                 fwrite($myfile, "\n");
                
                 fclose($myfile);
-                //$line = "$nume;$optiuni;$descriere;$url1;$url2;$fisierpoza";
+
 
              
+    $fileUploadDir = "./upload";
+
+    if (!(move_uploaded_file($_FILES["imagen"]["tmp_name"], $fileUploadDir."/".$_FILES["imagen"]["name"])))
+        echo "<br>Error al subir el fichero";
+
+    $myfile = fopen("textfile.csv", "a") or die("Unable to open file!");
+    $txt = "\n$nume;$descriere;$optiuni;$url1;$url2;$fisierpoza";
+    fwrite($myfile, $txt);
+    fclose($myfile);
+}
+
+                //$line = "$nume;$optiuni;$descriere;$url1;$url2;$fisierpoza";
+
+            /* echo "<pre>";
+             echo "<h1>Contenten  array POST</h1>";
+             echo "<h1>Contenten  array Files</h1>";
+             ///print_r($_POST)
+             echo "</pre>";*/
 
 
 
@@ -123,15 +141,8 @@
                 echo "<br>Your url informacion is ...".$array_line[3];
                 echo "<br>Your url google maps is ...".$array_line[4];
                 echo "<br>Your photo name is ...".$array_line[5];*/
-            }
 
-        
-        
-
-
-
-        ?>
-
+?>
    
     </body>
 </html>
