@@ -103,7 +103,7 @@
                 fwrite($myfile, ";");
                 fwrite($myfile, $_POST["url2"]);
                 fwrite($myfile, ";");
-                fwrite($myfile, $_POST["fisier"]);
+                fwrite($myfile, $_POST["fisier"]["name"]);
                 fwrite($myfile, "\n");
                
                 fclose($myfile);
