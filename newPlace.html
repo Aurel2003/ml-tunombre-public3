@@ -83,7 +83,7 @@
    <div class="c2">
     <a href="./index.html" id="link2">Nuevo lugar que visitar</a>
    </div>
-<form action="./getdata.php" method="post">
+<form action="./getdata.php" method="post" enctype="multipart/form-data">
 <h1 style="text-align: center;margin-top: 10px;">Nuevo lugar que visitar</h1>
 <h3 style="text-align: center; margin-top: 20px;">Nombre del lugar:</h3>
 <input  name="nume"  type="text" style="width: 500px;margin-left: 100px;border: 2px solid white;height: 25px;"><br>
@@ -118,9 +118,9 @@
 <h3 style="text-align: center; margin-top: 20px;">URL.con enlance a Google Maps:</h3>
 <input name="url2"  type="text" style="width: 500px;margin-left: 100px;border: 2px solid white;height: 25px;"><br>
 <h3 style="text-align: center; margin-top: 20px;">Imagen:</h3>
-<select style="width: 500px;margin-left: 100px;border: 2px solid white;height: 25px;">
+<br><br>
     <input type="file" accept="image/png, image/jpeg" class="icon" name="fisier">
-</select>
+
 <button type="submit" class="sub">Enviar</button>
 </form>
 </body>

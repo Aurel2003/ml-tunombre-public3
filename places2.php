@@ -25,6 +25,36 @@ echo "</pre>";
 <html>
 <head>
 	<title>Descubriendo Gran Canaria</title>
+    <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body{
+                margin: 0;
+                padding: 0;
+                display: grid;
+                justify-content: center;
+            }
+          ul,li{
+            display: inline-block;
+            padding: 1rem 5.7rem ;
+          }
+          a{
+            text-decoration: none;
+            margin-left: 1rem;
+          }
+          h1{
+            text-align: center;
+          }
+          table{
+            margin-top: 30px;
+          }
+         
+
+        </style>
 </head>
 <body>
 	<header>
@@ -42,7 +72,7 @@ echo "</pre>";
             <h1>Lugares que no  me puedo perder</h1>
             <table border="1">
                 <thead>
-                    <tr>
+                    <tr style="background-color:rgb(0,230,40);">
                         <th>Visitado</th>
                         <th>Nombre del lugar</th>
                         <th>Descripción</th>

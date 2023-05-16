@@ -17,13 +17,17 @@
             
                  //$linkaddress = "./newPlace.html";
                  
+                /*echo "<pre>";
+                 print_r($_FILES);
+                 print_r($_POST);
+                 echo "</pre>";*/
 
            
                $nume = $_POST["nume"];
                $descriere = $_POST["descriere"];
                $url1 = $_POST["url1"];
                $url2 = $_POST["url2"];
-               $fisierpoza = $_POST["fisier"];
+               $fisierpoza = $_FILES["fisier"]["name"];;
                $optiuni =  $_POST["optiuni"];
              
 
@@ -103,15 +107,14 @@
                 fwrite($myfile, ";");
                 fwrite($myfile, $_POST["url2"]);
                 fwrite($myfile, ";");
-                fwrite($myfile, $_POST["fisier"]["name"]);
-                fwrite($myfile, "\n");
-               
-                fclose($myfile);
+                fwrite($myfile, $_FILES["fisier"]["name"]);
+               fclose($myfile);
 
 
              
     $fileUploadDir = "./upload";
-
+   if (!(move_uploaded_file($_FILES["fisier"]["tmp_name"], $fileUploadDir."/".$_FILES["fisier"]["name"])))
+        echo "<br>Error al subir el fichero";
     
     $myfile = fopen("textfile.csv", "a") or die("Unable to open file!");
     $txt = "\n$nume;$descriere;$optiuni;$url1;$url2;$fisierpoza";
