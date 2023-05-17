@@ -89,18 +89,19 @@ echo "</pre>";
                         // Iterate over the $places array
                         // $place will contain one place on every iteration
                         foreach ($places as $place) {
-                            echo "<tr>";
-                            echo "<td><input type='checkbox' checked='checked'></td>";
+                            echo "<tr>";   
+                            //echo "<td><input type='checkbox' checked='checked'></td>";
+                            echo "<td></td>";
                             echo "<td>$place[0]</td>";
                             echo "<td>$place[1]</td>";
                             echo "<td>$place[2]</td>";
                             echo "<td><a href='$place[3]'>$place[3]</a></td>";
                             echo "<td><a href='$place[4]'>$place[4]</a></td>";
-                            echo "<td><img src='upload/".$place[5]."' width='200px'></td>";
+                            echo "<td><a href='$place[5]' target='blank'><img src='upload/".$place[5]."' width='200px'></a></td>";
                             echo "</tr>";
 
                         }
-
+                   
                     ?>
                 
                 </tbody>
